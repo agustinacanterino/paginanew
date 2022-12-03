@@ -3,8 +3,28 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.contenedor {
+    width: 90%; /*contiene toda la pagina en el medio*/
+    max-width: 1200px; 
+    overflow: hidden; /*hace que sno sobre nada, que se mantenga lo que sobra escondido*/
+    margin: auto; /*se acomoda el margen de forma automatica al width*/
+    padding: 60px; /*separa a los items contenedores uos de otros*/
+}
+
+header{
+    height: 100vh; /*utiliza todo el viewport*/
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%), url(../pagina/img/nyc\ header.jpg); /*;e da el degradado, se va sobre el color y se puede cambiar a rgb, y al costado esta la opacidad, de 1 a 0 va */
+    background-repeat: no-repeat; /*hace que el fondo no se repita*/
+    background-size: cover; /*achica la imagen para que entre toda sin pixelarse*/
+    background-attachment: fixed; /*se fija la imagen dentro del contenedor*/
+    background-position: center; /*se posiciona la imagen en el centro del contenedor, cosa de que se vea bien la imagen*/
+}
+
+/*min 21 51 https://www.youtube.com/watch?v=ivyIqmczxHU */
